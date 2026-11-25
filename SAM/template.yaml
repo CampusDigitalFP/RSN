@@ -13,7 +13,7 @@ Resources:
     Properties:
       CodeUri: hello_world/
       Handler: app.lambda_handler
-      Runtime: python3.14
+      Runtime: python3.12
       Role: !Sub arn:${AWS::Partition}:iam::${AWS::AccountId}:role/LabRole
       Architectures:
         - x86_64
