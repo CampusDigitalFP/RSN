@@ -14,7 +14,7 @@ Resources:
       CodeUri: hello_world/
       Handler: app.lambda_handler
       Runtime: python3.14
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: !Sub arn:${AWS::Partition}:iam::${AWS::AccountId}:role/LabRole
       Architectures:
         - x86_64
       Events:
